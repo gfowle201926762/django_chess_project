@@ -1,0 +1,25 @@
+{% load static %}
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <script src="{% static 'main/home.js'%}" defer type="module"></script>
+  </head>
+
+
+  <body>
+    <p>This is the home page</p>
+    <form id='chess_room_form'>
+        <input type='text' name='chess_room_input'/>
+        <input type='submit' id='chess_room_submit'/>
+    </form>
+  </body>
+
+  
+</html>

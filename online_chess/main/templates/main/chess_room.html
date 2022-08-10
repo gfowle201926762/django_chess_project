@@ -1,0 +1,39 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chess Room</title>
+    <link rel="stylesheet" href="{% static 'main/style.css'%}">
+    <script src="{% static 'main/scriptttt.js'%}" defer type="module"></script>
+  </head>
+
+
+  <body>
+    
+
+    
+    <div id="board_wrapper" class="board_wrapper">
+        <div id="board" class="board">
+        </div>
+    </div>
+
+    {{chess_room_name|json_script:'chess-room-name'}}
+
+    
+  </body>
+
+
+  <script>
+
+    
+  </script>
+  
+</html>
+
+
+
+
